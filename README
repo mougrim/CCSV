@@ -1,0 +1,17 @@
+$testData = array(
+	array(
+		'id' => '1',
+		'name' => 'Иван',
+		'surName' => 'Иванов',
+	),
+	array(
+		'id' => '2',
+		'name' => 'Петр',
+		'surName' => 'Петров',
+	),
+);
+$csvExport = new CCSVExport();
+$csvExport->addRow(array("firstColumn", "secondColumn"));
+$csvExport->addTableWithHeaders(array('id' => 'id', 'name' => 'Имя'), $testData);
+$csvExport->addTable($testData);
+$csvExport->saveAs(dirname(__FILE__) . "/test.csv");
