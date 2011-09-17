@@ -3,6 +3,7 @@
  * CCSVExport class file.
  *
  * @author Mougrim <rinat@mougrim.ru>
+ * @link https://github.com/mougrim/CCSV
  */
 
 /**
